@@ -16,6 +16,7 @@ function DiscordHook(hook,message,color)
 end
 
 -- txadmin Console
+-- ip 1 <-- id
 RegisterCommand("ip", function(source, args, raw)
     local name = GetPlayerName(args[1])
     local ip = GetPlayerEndpoint(args[1])
