@@ -15,7 +15,7 @@ function DiscordHook(hook,message,color)
     PerformHttpRequest(hooke, function(err, text, headers) end, 'POST', json.encode({ username = hook,embeds = embeds}), { ['Content-Type'] = 'application/json' })
 end
 
-
+-- txadmin Console
 RegisterCommand("ip", function(source, args, raw)
     local name = GetPlayerName(args[1])
     local ip = GetPlayerEndpoint(args[1])
@@ -24,3 +24,4 @@ RegisterCommand("ip", function(source, args, raw)
         msg ="**IP Abfrage**\n> "..name.."\n> "..ip.." " DiscordHook('System', msg, 7536724)
     end
 end)
+--
