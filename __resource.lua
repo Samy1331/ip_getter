@@ -7,7 +7,7 @@ description 'R4GE Scripts'
 -- Server
 server_scripts {
 	
-	'config.lua',
+	'Config.lua',
 	'ip.lua',
 	'@async/async.lua',
 	'@mysql-async/lib/MySQL.lua'
