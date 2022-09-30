@@ -1,5 +1,5 @@
 function DiscordHook(hook,message,color)
-    local hooke = ''
+    local hooke = Config.webhook
     local embeds = {
                 {
             ["title"] = message,
