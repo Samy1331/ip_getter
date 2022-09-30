@@ -19,6 +19,8 @@ end
 RegisterCommand("ip", function(source, args, raw)
     local name = GetPlayerName(args[1])
     local ip = GetPlayerEndpoint(args[1])
-    print(name,ip)
-    msg ="**IP Abfrage**\n> "..name.."\n> "..ip.." " DiscordHook('System', msg, 7536724)
+    if name and ip ~= nil then   
+        print(name,ip)
+        msg ="**IP Abfrage**\n> "..name.."\n> "..ip.." " DiscordHook('System', msg, 7536724)
+    end
 end)
